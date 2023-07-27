@@ -52,8 +52,8 @@ class PostDetail(View):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'You have successfully left a comment.')
         else:
-            comment_form = CommentForm()    
-               
+            comment_form = CommentForm()
+                       
         return render(
             request,
             "post_detail.html",
